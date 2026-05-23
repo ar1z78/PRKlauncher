@@ -20,12 +20,12 @@ BEGIN
         BLOCK "040904B0"
         BEGIN
             VALUE "CompanyName",      "PRK Tools\0"
-            VALUE "FileDescription",  "Launcher for Project RK\0"
+            VALUE "FileDescription",  "Project RK Multi-Tool for Wine\0"
             VALUE "FileVersion",      "1.0.0.0\0"
-            VALUE "InternalName",     "PRKLauncher\0"
+            VALUE "InternalName",     "PRKMultitool\0"
             VALUE "LegalCopyright",   "Copyright (C) 2026 Ar1z\0"
-            VALUE "OriginalFilename", "PRKLauncher.exe\0"
-            VALUE "ProductName",      "PRK Launcher by Ar1z\0"
+            VALUE "OriginalFilename", "PRKMultitool.exe\0"
+            VALUE "ProductName",      "PRK Multitool by Ar1z\0"
             VALUE "ProductVersion",   "1.0.0.0\0"
         END
     END

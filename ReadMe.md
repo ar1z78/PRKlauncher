@@ -1,4 +1,4 @@
-# PRK Launcher by Ar1z
+# PRK Multitool by Ar1z
 
 A lightweight, high-performance, and modular multi-account launcher and automated login tool designed for **Project Rubi-Ka**. Built entirely in native C and Win32 API, it features an integrated account credential manager, customizable styling, and configurable global hotkeys.
 
@@ -16,8 +16,8 @@ windres resource.rc -o resource.o
 Compile your modules into their standalone targeted binaries using the following commands:
 
 ```bash
-# Compile Main Launcher Module
-gcc launcher.c GUI.c logic.c ini_manager.c game_launcher.c image_manager.c resource.o -o PRKlauncher.exe -mwindows -luser32 -lkernel32 -lcomdlg32 -lgdi32 -lgdiplus -lole32
+# Compile Main PRKMultitool Module
+gcc launcher.c GUI.c logic.c ini_manager.c game_launcher.c image_manager.c resource.o -o PRKMultitool.exe -mwindows -luser32 -lkernel32 -lcomdlg32 -lgdi32 -lgdiplus -lole32
 
 # Compile Settings Manager Module
 gcc settings.c GUI.c ini_manager.c logic.c resource.o -o settings.exe -mwindows -luser32 -lkernel32 -lcomdlg32
@@ -30,19 +30,19 @@ gcc accounts.c GUI.c ini_manager.c logic.c resource.o -o accounts.exe -mwindows 
 ## 📖 How to Use
 
 ### 1. Initial Setup
-1. Run `launcher.exe`. On your very first startup, it will prompt you to browse and select your main `Project Rubi-Ka` executable (e.g., `AnarchyOnline.exe`).
-2. The launcher will automatically generate a clean `settings.ini` profile file in its directory.
+1. Run `PRKMultitool.exe`. On your very first startup, it will prompt you to browse and select your main `Project Rubi-Ka` executable (e.g., `AnarchyOnline.exe`).
+2. The Program will automatically generate a clean `settings.ini` profile file in its directory.
 
 ### 2. Managing Accounts
 1. Launch `accounts.exe` (or access the configuration panel) to open the **Accounts Manager**.
 2. Type an account username and password, then click **Save**. Your credentials are securely hidden using a local XOR-obfuscation (`Xcrypt`) layout script.
-3. You can manage multiple profiles here. Saved accounts are immediately fed into the main launcher dropdown menus.
+3. You can manage multiple profiles here. Saved accounts are immediately fed into the main Window dropdown menus.
 
-### 3. Customizing Your Launcher & Adding Tools
+### 3. Customizing & Adding Tools
 1. Open `settings.exe` to manage theme layouts, button labels, execution delays, and external tools.
 2. Under **Tools Config**, manage the utilities, change the display name and click **Browse** to point to any utility utility program (like an inventory manager, map tool, or chat overlay) or clear it's settings.
 3. Customize window colors, button styles, font families, or choose a custom `.png`/`.jpg` file for a **Background Image**.
-4. Click **SAVE SETTINGS** to automatically refresh and restart the launcher window.
+4. Click **SAVE SETTINGS** to automatically refresh and restart the main window.
 
 ### 4. Running Clients & Keyboard Commands
 *   Click **Primary** or **Alt** dropdown names to cycle through your saved accounts, and click their respective **Go** buttons to fire up the client and let the macros log you in automatically.

@@ -101,8 +101,6 @@ LRESULT CALLBACK WindowProc(HWND hwnd, UINT msg, WPARAM wp, LPARAM lp) {
 						HWND hBtn = GetDlgItem(hwnd, id);
 						SetWindowTextA(hBtn, cleanName);
 						
-						// FIX GHOSTING: Force a repaint of the button's rectangle 
-						// This clears out the old "Empty" text artifacts completely
 						RECT rcBtn;
 						GetWindowRect(hBtn, &rcBtn);
 						MapWindowPoints(NULL, hwnd, (LPPOINT)&rcBtn, 2);
@@ -173,7 +171,7 @@ int WINAPI WinMain(HINSTANCE hI, HINSTANCE hP, LPSTR lp, int nS) {
     wc.hbrBackground = CreateSolidBrush(formColor);
     RegisterClassA(&wc);
 
-    HWND hwnd = CreateWindowA("AOL", "PRK Launcher by Ar1z", 
+    HWND hwnd = CreateWindowA("AOL", "PRK Multitool by Ar1z", 
                              WS_OVERLAPPED | WS_CAPTION | WS_SYSMENU | WS_MINIMIZEBOX, 
                              (x == -32000) ? CW_USEDEFAULT : x, 
                              (y == -32000) ? CW_USEDEFAULT : y, 

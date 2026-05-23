@@ -116,7 +116,7 @@ LRESULT CALLBACK SetProc(HWND hwnd, UINT msg, WPARAM wp, LPARAM lp) {
             GetModuleFileNameA(NULL, launcherPath, MAX_PATH);
             char* lastSlash = strrchr(launcherPath, '\\');
             if (lastSlash) {
-                strcpy(lastSlash + 1, "launcher.exe"); // Change settings.exe to launcher.exe in path
+                strcpy(lastSlash + 1, "prkmultitool.exe"); // Change settings.exe to launcher.exe in path
                 ShellExecuteA(NULL, "open", launcherPath, NULL, NULL, SW_SHOWNORMAL);
             }
         }

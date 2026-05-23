@@ -1,7 +1,7 @@
 ===============================================================================
-                       PRK LAUNCHER CONFIGURATION GUIDE
+                       PRK MULTITOOL CONFIGURATION GUIDE
 ===============================================================================
-This file explains how to manually customize your launcher, add accounts, and
+This file explains how to manually customize this utility, add accounts, and
 configure keyboard hotkeys directly using any text editor (like Notepad).
 
 All changes must be made inside the "settings.ini" file.
